@@ -37,11 +37,11 @@ Just clone or download the project, then run <code>npm start</code>.</p>
 <p>To connect to your custom server, go to <a href="bit.ly/plexicraft">the plexicraft site</a> and enter the following
 commands into the f12 developer console:</p>
 
-<p>ws = new WebSocket("ws://localhost:5000");</p>
+<p>'ws = new WebSocket("ws://localhost:5000");'</p>
 
 <p>then enter:</p>
 
-<p>ws.onmessage = function(event){
+<p>'ws.onmessage = function(event){
                 document.getElementById('server').innerHTML = event.data;
                 if(awaiting_login == true){
                     if(event.data == "<a href="https://github.com/PLEXI" class="user-mention">@PLEXI</a> %Accounts% %you% Success"){
@@ -52,7 +52,7 @@ commands into the f12 developer console:</p>
 <a id="welcome-back---username--" class="anchor" href="#welcome-back---username--" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Welcome back, ' + username + '!</h1>');
                     }
                 }
-            };
+            };'
 
 <p>I know it's long so just <strong>copy and paste</strong> it!</p>
 
